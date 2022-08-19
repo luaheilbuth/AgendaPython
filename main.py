@@ -1,3 +1,4 @@
+#Função que recebe um menu com opções para o usuários
 def menu():
     voltarMenuPrincipal = 's'
     while voltarMenuPrincipal == 's':
@@ -31,6 +32,7 @@ def menu():
 
 
 
+#Função que recebe o cadastro de usuários
 def novoContato():
     nome = input('Digite o nome do seu contato: ')
     telefone = input('Digite o telefone do seu contato: ')
@@ -46,12 +48,14 @@ def novoContato():
     except:
         print('Erro na gravação do contato')
 
+#Função para consultar os usuários
 def consultaContato():
     agenda = open('atividadeAtiva.txt','r')
     for contato in agenda:
         print(contato)
     agenda.close()
 
+#Função para buscar um contato pelo nome
 def buscarContatoPeloNome():
     nome = input('Digite o nome a ser procurado: ').upper()
     agenda = open('atividadeAtiva.txt', 'r')
@@ -60,6 +64,7 @@ def buscarContatoPeloNome():
             print(contato)
     agenda.close()
 
+#Função que recebe a atualização de usuários
 def atualizarContato():
         nomeDeletado = input('Digite o nome a ser atualizado: ').lower()
         agenda = open('atividadeAtiva.txt', 'r')
@@ -87,6 +92,7 @@ def atualizarContato():
         except:
             print('Erro na gravação do contato')
 
+#Função para remover usuários
 def removerContato():
     nomeDeletado = input('Digite o nome a ser deletado: ').lower()
     agenda = open('atividadeAtiva.txt','r')
@@ -103,6 +109,7 @@ def removerContato():
     print(f'Contato deletado com sucesso!')
     consultaContato()
 
+#Função para sair do programa
 def sair():
     print(f'Até mais!')
     exit()
