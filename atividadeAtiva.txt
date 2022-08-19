@@ -1,6 +1,6 @@
-Luana,999999999,luana@gmail.com,luana,luana 
+Luana,99999999,luana@gmail.com,luana,luana 
 Philipe,99999999,philipe@gmail.com,philipe,philipe 
 Leo,99999999,leo@gmail.com,leo,leo 
 Deia,99999999,deia@gmail.com,deia,deia 
-Juliana,99999999,juliana@gmail.com,juliana,juliana 
-Joao,99999999,joao@gmail.com,joao,joao 
+Juliana,99999999,juliana@gmail.com,juliana,ju 
+joao,99999999,joao@gmail.com,joao,joao 
